@@ -1,0 +1,79 @@
+@media screen and (min-width: 768px){
+
+    .apresenta_clima{
+     width: 70%;  
+    }
+    #barraPesquisa, #btn_pesquisa{
+    padding: 10px;
+    height: 45px;
+}
+
+    .clima_header{
+        grid-area: climaHeader;
+        width: 100%;
+        text-align: center;
+        font-size: 28px;        
+    }
+
+    .clima_atual{
+        margin: 0 auto;
+        grid-area: climaAtual;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        align-items: center;
+    }
+
+     .clima_atual img{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .item1{
+        font-size: 32px;
+    }
+
+    .item2{
+        font-size: 28PX;
+    }
+
+     .item3{
+        font-size: 28px;
+    } 
+
+    .clima_detalhes{
+        grid-area: climaDetalhes;
+        font-size: 24px;
+        font-weight: var(--secondary-font-weitgh);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .apresenta_clima{
+         width: 50%;
+         display: grid;
+         grid-template-areas:   
+         'climaHeader climaAtual'
+         'climaDetalhes climaAtual'
+         'climaDetalhes climaAtual'
+         ;
+    }
+
+    .clima_atual{
+       width: 90%;
+       align-items: center;
+       justify-content: space-around;
+}
+    .item1{
+        margin: auto;
+    }
+
+    .item2{
+        margin-bottom: 30px;
+    }
+
+    .item3{
+        margin-bottom: auto;
+    }
+}
